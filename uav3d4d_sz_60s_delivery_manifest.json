@@ -1,0 +1,103 @@
+{
+  "version": "v11",
+  "generated": "2026-11-19",
+  "facts_source": "REGEN_FACTS_v11.json",
+  "source_record": "03_experiments/e6_ablation_ground/runs/shenzhen_ground.json",
+  "run_id": "shenzhen:M:s4",
+  "code_hash": "a3cf9223e1fc2104",
+  "service_semantics": "ground",
+  "instance_protocol": "v2",
+  "supersedes": "v10 (moved to superseded/)",
+  "languages": {
+    "en": {
+      "delivered": "uav3d4d_sz_60s_en.mp4",
+      "sha256": "0C9391A8699D14C4555797946C991294B7E5C8F963833E8D274E4891C8B056EC",
+      "bytes": 24510367,
+      "duration_s": 60.0,
+      "video": "1920x1080, 30 fps, H.264",
+      "audio": "AAC 48 kHz stereo, 192 kbps",
+      "integrated_lufs": -15.8,
+      "true_peak_dbfs": -1.5
+    },
+    "zh": {
+      "delivered": "uav3d4d_sz_60s_zh.mp4",
+      "sha256": "1081C02D79C485B7848FF6AFF7132CE631FD768267178011BE214B29F7503844",
+      "bytes": 24287845,
+      "duration_s": 60.0,
+      "video": "1920x1080, 30 fps, H.264",
+      "audio": "AAC 48 kHz stereo, 192 kbps",
+      "integrated_lufs": -16.3,
+      "true_peak_dbfs": -1.5
+    }
+  },
+  "opening_motion": {
+    "frame_diff_median": 0.748,
+    "frames_above_0_5": "266/362"
+  },
+  "sortie": {
+    "uav": 1,
+    "path": "D -> 17 -> 9 -> 14 -> 6 -> D",
+    "altitudes_m": [100, 60, 110, 110, 120],
+    "leg_times_s": [108.5, 62.7, 132.7, 220.7, 195.3],
+    "mode": "continuous trajectory with wide-orbit target tracking"
+  },
+  "road_network": {
+    "source": "OpenStreetMap contributors (ODbL)",
+    "kept_ways": 420,
+    "file": "video_src/render/roads_osm.js",
+    "size_bytes": 86293,
+    "label": "real OSM roads + footprints · case layer illustrative"
+  },
+  "facts": {
+    "uavs": 7,
+    "customers": 20,
+    "no_fly_zones": 67,
+    "cost_cny": 97.098,
+    "separation_violations": 0,
+    "departures_span_s": [0.0, 349.23724046714074],
+    "certified_global_lb_cny": 92.904,
+    "certified_gap_pct": 4.32,
+    "proven_optimal": false,
+    "crossing_events_schedule": 4,
+    "strict_intersections_recomputed": 7,
+    "featured_crossing": {
+      "uav_a": 4,
+      "uav_b": 6,
+      "levels_m": [100, 60],
+      "xy": [799.598979297927, 1047.2268197650758]
+    }
+  },
+  "certificate_claim": "97.098 CNY plan, certified optimality gap of only 4.32 percent (global lower bound 92.904 CNY); zero separation violations. Positive framing only.",
+  "audio_policy": {
+    "narration_only": true,
+    "music": false,
+    "ambience": false,
+    "whooshes": false,
+    "chimes": false,
+    "voices": {"en": "en-US-AndrewNeural", "zh": "zh-CN-YunxiNeural"},
+    "edge_tts_rate": "0%",
+    "max_local_time_fit": 1.13,
+    "voiced_speech_s": {"en": 49.49, "zh": 45.60}
+  },
+  "qa": {
+    "blink_still_frames": {"en": 1609, "zh": 1609},
+    "blink_persistent_pixels_gt_5pct": 0,
+    "blink_worst_single_frame_pct": {"en": 3.20, "zh": 3.20},
+    "blink_worst_time_s": 23.93,
+    "camera_clipping": false,
+    "numbers_verified": true,
+    "number_checks": 26,
+    "duration_60s": true,
+    "stream_1920x1080_30fps_h264_aac": true
+  },
+  "sources": {
+    "scene": "video_src/render/scene_sz_redesign.html",
+    "data": "video_src/render/redesign_data.js",
+    "scene_json": "video_src/data/scene_CN_M_s4_v11.json",
+    "figure2": "video_src/render/assets/fig2_conflict.png",
+    "figure4": "video_src/render/assets/fig4_r2.png",
+    "narration_en": "video_src/audio/narration_60_en.txt",
+    "narration_zh": "video_src/audio/narration_60_zh.txt",
+    "qa": "video_src/audit_redesign_v8/QA_FINAL_v11.json"
+  }
+}
